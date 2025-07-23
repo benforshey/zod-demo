@@ -1,0 +1,50 @@
+[
+    {
+        "user": {
+            "username": "alice123",
+            "email": "alice@example.com",
+            "avatarUrl": "https://github.com/alice.png",
+            "displayName": "alice123"
+        },
+        "activityType": "push",
+        "timestamp": "2024-01-15T10:30:00.000Z",
+        "source": "github",
+        "details": {
+            "source": "github",
+            "repoName": "frontend-app",
+            "commitCount": 3
+        }
+    },
+    {
+        "user": {
+            "username": "bob.smith",
+            "displayName": "Bob Smith"
+        },
+        "activityType": "message",
+        "timestamp": "2024-01-15T12:30:00.000Z",
+        "source": "slack",
+        "details": {
+            "source": "slack",
+            "channel": "#general",
+            "messageCount": 5
+        }
+    },
+    {
+        "user": {
+            "username": "charlie",
+            "email": "charlie@company.com",
+            "displayName": "charlie"
+        },
+        "activityType": "ticket_update",
+        "timestamp": "2024-01-15T05:00:00.000Z",
+        "source": "jira",
+        "details": {
+            "source": "jira",
+            "ticketId": "PROJ-123",
+            "statusChange": {
+                "from": "In Progress",
+                "to": "Done"
+            }
+        }
+    }
+]

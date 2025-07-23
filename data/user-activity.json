@@ -1,0 +1,47 @@
+[
+  {
+    "source": "github",
+    "user": {
+      "username": "alice123",
+      "email": "alice@example.com",
+      "meta": { "avatar_url": "https://github.com/alice.png" }
+    },
+    "activity": {
+      "type": "push",
+      "timestamp": "2024-01-15T10:30:00Z",
+      "details": { "repo": "frontend-app", "commits": 3 }
+    }
+  },
+  {
+    "source": "slack",
+    "user": {
+      "username": "bob.smith",
+      "meta": { "display_name": "Bob Smith" }
+    },
+    "activity": {
+      "type": "message",
+      "timestamp": 1705321800000,
+      "details": { "channel": "#general", "message_count": "5" }
+    }
+  },
+  {
+    "source": "jira",
+    "user": {
+      "username": "charlie@company.com",
+      "email": "charlie@company.com"
+    },
+    "activity": {
+      "type": "ticket_update",
+      "timestamp": "2024/01/15",
+      "details": {
+        "ticket_id": "PROJ-123",
+        "changes": { "status": { "from": "In Progress", "to": "Done" } }
+      }
+    }
+  },
+  {
+    "source": "github",
+    "user": null,
+    "activity": { "timestamp": "invalid-date" }
+  }
+]
