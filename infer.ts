@@ -14,7 +14,7 @@ function displayActivity(activity: Activity) {
   console.log(activity.timestamp.toLocaleDateString());
   console.log(activity.activityType);
 
-  // TypeScript knows what type of details based on discriminated union.
+  // TypeScript knows what type of details based on discriminated union (type narrowing).
   switch (activity.details.source) {
     case "github":
       // TypeScript knows commitCount exists here!
