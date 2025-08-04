@@ -10,13 +10,13 @@ function processActivitiesWithoutZod(activities, adapters) {
 
   for (const activity of activities) {
     try {
-      const transformer = adapters[activity?.source];
+      const adapter = adapters[activity?.source];
 
-      if (!transformer) {
+      if (!adapter) {
         continue;
       }
 
-      processed.push(transformer(activity));
+      processed.push(adapter(activity));
     } catch (error) {
       console.error(error);
     }

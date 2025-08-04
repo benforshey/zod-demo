@@ -12,13 +12,13 @@ function processActivitiesWithZod(activities, adapters) {
 
   for (const activity of activities) {
     try {
-      const transformer = adapters[activity?.source];
+      const adapter = adapters[activity?.source];
 
-      if (!transformer) {
+      if (!adapter) {
         continue;
       }
 
-      processed.push(ActivitySchema.parse(transformer(activity)));
+      processed.push(ActivitySchema.parse(adapter(activity)));
     } catch (error) {
       console.error(error instanceof ZodError ? error.message : error);
     }
